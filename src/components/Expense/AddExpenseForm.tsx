@@ -19,10 +19,12 @@ const AddExpenseForm = () => {
       name: name,
       cost: cost,
     };
-    let newList: Expense[] = expenses;
-    newList.push(newExpense);
-    setExpenses(newList);
-    console.log(newList);
+    // let newList: Expense[] = expenses;
+    // newList.push(newExpense);
+    // setExpenses(newList);
+    // console.log(newList);
+    setExpenses([...expenses, newExpense])
+    console.log([...expenses, newExpense]);
   };
 
   return (
