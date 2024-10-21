@@ -29,3 +29,19 @@ export const AppProvider = (props: any) => {
     </AppContext.Provider>
   );
 };
+
+
+// export const AppProvider: React.FC<{ children: ReactNode }> = ({children}) => {
+//   const [expenses, setExpenses] = useState<Expense[]>(initialState.expenses);
+
+//   return (
+//     <AppContext.Provider
+//       value={{
+//         expenses: expenses,
+//         setExpenses: setExpenses,
+//       }}
+//     >
+//       {children}
+//     </AppContext.Provider>
+//   );
+// };

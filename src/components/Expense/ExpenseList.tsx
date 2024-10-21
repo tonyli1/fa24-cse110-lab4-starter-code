@@ -11,6 +11,7 @@ const ExpenseList = () => {
       {expenses.map((expense: Expense) => (
         <ExpenseItem id={expense.id} name={expense.name} cost={expense.cost} />
       ))}
+      {/* test: {expenses.length} */}
     </ul>
   );
 };
